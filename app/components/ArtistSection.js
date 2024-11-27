@@ -1,11 +1,12 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ArtistSection = ({ artists }) => {
   return (
     <section id="artist-section" className="min-h-screen bg-[#151716] flex items-center justify-center py-12">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-[92%] mx-auto items-center text-white">
+      <div className="flex grid-cols-1 md:grid-cols-4 gap-6 w-[92%] mx-auto items-center text-white">
         {/* Left Artist */}
         {artists.map((artist, index) => (
           <div
@@ -25,12 +26,14 @@ const ArtistSection = ({ artists }) => {
             <h3 className="mt-4 text-lg font-semibold text-[#daa520]">{artist.name}</h3>
             {artist.role && <p className="text-sm text-gray-400">{artist.role}</p>}
             {artist.bio && (
-              <button
-                onClick={() => alert(`${artist.name}'s bio coming soon!`)} // Replace with modal or navigation
-                className="mt-2 text-sm font-medium text-[#daa520] hover:underline"
-              >
-                Learn More
-              </button>
+              <Link href="/artists/artist-name">
+                <button
+                  onClick={() => alert(`${artist.name}'s bio coming soon!`)} // Replace with modal or navigation
+                  className="mt-2 text-sm font-medium text-[#daa520] hover:underline"
+                >
+                  Learn More
+                </button>
+              </Link>
             )}
           </div>
         ))}
