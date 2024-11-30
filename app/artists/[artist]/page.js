@@ -1,8 +1,7 @@
 import Link from "next/link";
 
 export default function ArtistPage({ params }) {
-  const artistData =[
-   {
+  const artistData = { 
     name: "Lucy",
     role: "Junior Artist",
     bio: "Lucy specializes in fine-line and minimalist tattoos. Her passion lies in creating elegant, detailed designs that reflect her clients' unique stories.",
@@ -13,34 +12,7 @@ export default function ArtistPage({ params }) {
       twitter: "https://twitter.com/lucy_tattoos",
     },
     contactEmail: "lucy@taglinetattoostudio.com",
-  },
-  
-  {
-    name: "Monde",
-    role: "Senior Artist",
-    bio: "Lucy specializes in fine-line and minimalist tattoos. Her passion lies in creating elegant, detailed designs that reflect her clients' unique stories.",
-    image: "/path-to-lucy-image.jpg",
-    funFact: "Lucy has a background in botanical illustration, which influences her intricate floral designs.",
-    socialMedia: {
-      instagram: "https://instagram.com/lucy_tattoos",
-      twitter: "https://twitter.com/lucy_tattoos",
-    },
-    contactEmail: "lucy@taglinetattoostudio.com",
-  },
-  
-  {
-    name: "Fancy Fentse",
-    role: "Apprentice",
-    bio: "Lucy specializes in fine-line and minimalist tattoos. Her passion lies in creating elegant, detailed designs that reflect her clients' unique stories.",
-    image: "/path-to-lucy-image.jpg",
-    funFact: "Lucy has a background in botanical illustration, which influences her intricate floral designs.",
-    socialMedia: {
-      instagram: "https://instagram.com/lucy_tattoos",
-      twitter: "https://twitter.com/lucy_tattoos",
-    },
-    contactEmail: "lucy@taglinetattoostudio.com",
-  },
-];
+  };
 
   return (
     <section className="bg-[#151716] text-white min-h-screen px-6 py-12">
