@@ -18,6 +18,12 @@ export default function Home() {
       image: '/tl-assets/Artists/Screenshot_20240927_043503.jpg',
       bio: 'Monde is an expert in intricate and full-sleeve tattoos with over 10 years of experience.',
     },
+    {
+      name: 'fancy',
+      role: 'Apprentice',
+      image: '/tl-assets/Artists/Screenshot_20240927_043503.jpg',
+      bio: '',
+    },
   ];
 
   return (
