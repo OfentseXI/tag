@@ -2,7 +2,7 @@ import HeroSection from "./components/HeroSection";
 import AboutUsSection from "./components/AboutUs";
 import GallerySection from "./components/Gallery";
 import ArtistSection from "./components/ArtistSection";
-import ContactsSection from "./components/ContactUs";
+import ContactSection from "./components/ContactUs";
 
 export default function Home() {
   
@@ -23,7 +23,7 @@ export default function Home() {
       name: 'Fancy Fentse',
       role: 'Apprentice',
       image: '/tl-assets/Artists/Screenshot_20240927_043503.jpg',
-      bio: '',
+      bio: 'Young and Promising',
     },
   ];
 
@@ -34,7 +34,7 @@ export default function Home() {
         <AboutUsSection />
         <GallerySection />
         <ArtistSection artists={artists} />
-        <ContactsSection  />
+        <ContactSection  />
       </main>
     </div>
   );

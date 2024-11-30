@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const galleryItems = [
   {
@@ -27,7 +27,22 @@ const galleryItems = [
 ];
 
 export default function GallerySection() {
+  const [isVisible, setIsVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sectionPosition = document.getElementById('section3')?.offsetTop || 0;
+
+      if (scrollPosition > sectionPosition - window.innerHeight / 2) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const openModal = (item) => {
     setSelectedItem(item);
@@ -42,7 +57,12 @@ export default function GallerySection() {
       id="section3" 
       className="min-h-screen flex flex-col justify-center items-center bg-[#2C302E] px-4 sm:px-6 lg:px-20 py-12"
     >
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl text-white m-4 sm:m-8 text-center transition-all duration-500 hover:scale-105">
+      <h2 
+        className={`
+            text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 
+            text-white transition-transform duration-700 
+            ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
+        `}>
         SkinArt Gallery
       </h2>
     
@@ -54,7 +74,7 @@ export default function GallerySection() {
               bg-[#151716] rounded-lg shadow-lg p-4 sm:p-6 flex flex-col items-center 
               transform transition-transform hover:scale-105 duration-300 
               cursor-pointer opacity-0 animate-fadeIn
-              ${`animate-delay-${index * 100}`}
+              ${`animate-delay-${index * 150}`}
             `}
             onClick={() => openModal(item)}
           >

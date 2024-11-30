@@ -59,9 +59,18 @@ const ContactCard = ({ title, description, actionText, actionLink, icon }) => (
   </div>
 );
 
-const ContactsSection = () => (
-  <div className="container flex flex-col items-center gap-16 mx-auto my-32">
-    <div className="grid mx-auto w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+const ContactSection = () => (
+    
+  <div className="h-screen container flex flex-col items-center justify-center gap-16 mx-auto">
+    <h2
+    className={`
+    text-4xl sm:text-4xl lg:text-5xl font-bold my-10 
+    text-white transition-transform duration-700 
+    `}
+    >
+        Get in touch
+    </h2>
+    <div className="grid mx-auto w-full items-center justify-center grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
       {contactData.map((contact) => (
         <ContactCard key={contact.id} {...contact} />
       ))}
@@ -69,4 +78,4 @@ const ContactsSection = () => (
   </div>
 );
 
-export default ContactsSection;
+export default ContactSection;
