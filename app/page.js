@@ -19,7 +19,7 @@ export default function Home() {
       bio: 'Monde is an expert in intricate and full-sleeve tattoos with over 10 years of experience.',
     },
     {
-      name: 'fancy',
+      name: 'Fancy Fentse',
       role: 'Apprentice',
       image: '/tl-assets/Artists/Screenshot_20240927_043503.jpg',
       bio: '',

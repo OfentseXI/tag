@@ -14,6 +14,7 @@ export default function ArtistPage({ params }) {
     },
     contactEmail: "lucy@taglinetattoostudio.com",
   },
+  
   {
     name: "Monde",
     role: "Senior Artist",
