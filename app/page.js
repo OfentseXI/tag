@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 import AboutUsSection from "./components/AboutUs";
 import GallerySection from "./components/Gallery";
 import ArtistSection from "./components/ArtistSection";
+import ContactsSection from "./components/ContactUs";
 
 export default function Home() {
   
@@ -33,6 +34,7 @@ export default function Home() {
         <AboutUsSection />
         <GallerySection />
         <ArtistSection artists={artists} />
+        <ContactsSection  />
       </main>
     </div>
   );
