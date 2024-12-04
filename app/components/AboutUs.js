@@ -27,7 +27,7 @@ export default function AboutUsSection() {
       <div className="text-center max-w-5xl mx-auto">
         <h2
           className={`
-            text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 
+            text-4xl md:text-5xl lg:text-5xl font-heading font-extrabold mb-10 
             text-white transition-transform duration-700 
             ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
           `}
@@ -61,7 +61,7 @@ export default function AboutUsSection() {
               `}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="bg-[#daa520] text-black w-10 h-10 flex items-center justify-center rounded-full text-lg font-bold mb-4">
+              <div className="bg-[#daa520] text-black w-10 h-10 flex items-center justify-center rounded-full text-2xl font-heading font-extrabold mb-4">
                 {index + 1}
               </div>
               <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-2">

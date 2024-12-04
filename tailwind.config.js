@@ -11,6 +11,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        heading: ['"Josefin Slab"', "serif"], // Font for headings
+        body: ['"Josefin Sans"', "sans-serif"], // Font for body text
+      },
     },
   },
   plugins: [],

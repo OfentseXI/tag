@@ -4,6 +4,7 @@ import GallerySection from "./components/Gallery";
 import ArtistSection from "./components/ArtistSection";
 import ContactSection from "./components/ContactUs";
 import ReviewSection from "./components/Reviews";
+import BookingSection from "./components/Booking";
 
 export default function Home() {
   
@@ -36,6 +37,7 @@ export default function Home() {
         <GallerySection />
         <ArtistSection artists={artists} />
         <ReviewSection />
+        <BookingSection />
         <ContactSection  />
       </main>
     </div>

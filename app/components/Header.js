@@ -30,7 +30,7 @@ export default function Header() {
             ${isMenuOpen ? 'block' : 'hidden'} 
             absolute top-full left-0 
             bg-[#151716] w-full 
-            text-lg text-[#A3A8A3]
+            text-lg font-body text-[#A3A8A3]
           `}
         >
           <ul className="flex flex-col items-center py-4">
