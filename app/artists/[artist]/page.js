@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ArtistPage({ params }) {
   const artistData = { 
@@ -27,9 +28,11 @@ export default function ArtistPage({ params }) {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Artist Portrait */}
         <div className="text-center md:text-left">
-          <img
+          <Image
             src={artistData.image}
             alt={artistData.name}
+            width={500}
+            height={500}
             className="rounded-lg shadow-lg w-full md:w-3/4 mx-auto"
           />
         </div>

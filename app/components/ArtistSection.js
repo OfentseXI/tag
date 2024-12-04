@@ -11,8 +11,8 @@ const ArtistSection = ({ artists }) => {
         <h2 className="text-4xl md:text-4xl lg:text-4xl font-bold text-white text-center mb-2">Our Talented Artists</h2>
         <p className="text-md md:text-lg leading-relaxed text-center mx-6">
             Our team of professional tattoo artists brings your ideas to life with precision, creativity, and passion.
-            With years of experience and unique styles, we ensure every design is a masterpiece. Whether you're looking
-            for a minimalist design or a full-sleeve artwork, you're in expert hands at Tagline Tattoo Studio.
+            With years of experience and unique styles, we ensure every design is a masterpiece. Whether you&apos;re looking
+            for a minimalist design or a full-sleeve artwork, you&apos;re in expert hands at Tagline Tattoo Studio.
         </p>
 
         {/* Artists Grid */}
