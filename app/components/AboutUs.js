@@ -64,10 +64,10 @@ export default function AboutUsSection() {
               <div className="bg-[#daa520] text-black w-10 h-10 flex items-center justify-center rounded-full text-2xl font-heading font-extrabold mb-4">
                 {index + 1}
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-2">
+              <h3 className="text-2xl md:text-xl lg:text-2xl font-heading font-bold mb-2">
                 {item.title}
               </h3>
-              <p className="text-sm sm:text-base">{item.description}</p>
+              <p className="text-m lg:text-m md:text-m sm:text-base font-body">{item.description}</p>
             </div>
           ))}
         </div>
