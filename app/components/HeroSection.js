@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <div 
       className="relative bg-cover bg-center bg-no-repeat w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[700px]" 
-      style={{ backgroundImage: "url('/tl assets/tattoo-in-dallas.jpg')" }}
+      style={{ backgroundImage: "url('/assets/tattoo-in-dallas.jpg')" }}
     >
       <div 
         className={`
@@ -22,7 +22,7 @@ export default function HeroSection() {
         `}
       >
         <Image 
-          src="/tl assets/taglogoG-adj.png" 
+          src="/assets/taglogoG-adj.png" 
           alt="logo" 
           width={500} 
           height={500} 

@@ -36,7 +36,7 @@ export default function ArtistSection({ artists }) {
         </h2>
         <p 
           className={`
-            text-2xl md:text-xl lg:text-2xlm font-body leading-relaxed text-center mx-6
+            text-xl md:text-xl lg:text-2xl text-gray-300 font-body leading-relaxed text-center mx-6
             transition-all duration-700 
             ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
           `}
@@ -47,28 +47,28 @@ export default function ArtistSection({ artists }) {
         </p>
 
         {/* Artists Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:mx-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:mx-15">
           {artists.map((artist) => (
             <div
               key={artist.name}
-              className="flex flex-wrap items-center bg-[#2C302E] p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className="flex flex-wrap items-center justify-center bg-[#2C302E] p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             >
               <Image
                 src={artist.image}
                 alt={`Portrait of ${artist.name}`}
                 width={280}
                 height={280}
-                className="rounded-md shadow-md hover:scale-105 transition-transform"
+                className="w-full h-80 rounded-md shadow-md object-cover"
                 loading="lazy"
               />
               <div className="mt-4 text-center">
-                <h3 className="text-lg font-semibold text-[#daa520]">{artist.name}</h3>
-                {artist.role && <p className="text-sm text-gray-400">{artist.role}</p>}
-                <p className="text-sm text-gray-300 mt-2">{artist.bio}</p>
+                <h3 className="lg:text-3xl text-3xl font-heading font-extrabold text-[#daa520]">{artist.name}</h3>
+                {artist.role && <p className="lg:text-lg text-xl font-body text-gray-400">{artist.role}</p>}
+                <p className="lg:text-m text-xl font-body text-gray-300 mt-2">{artist.bio}</p>
                 {artist.bio && (
                   <Link href={`/artists/${artist.name.toLowerCase().replace(/ /g, '-')}`}>
                     <button
-                      className="mt-4 text-sm font-medium text-[#daa520] hover:underline transition-all"
+                      className="my-4 lg:text-lg text-xl font-body font-medium text-[#daa520] hover:underline transition-all"
                     >
                       Learn More
                     </button>

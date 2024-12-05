@@ -12,13 +12,13 @@ export default function Home() {
     {
       name: 'Lucy',
       role: 'Junior Artist',
-      image: '/tl-assets/Artists/me.jpg',
+      image: '/assets/artists/me.jpg',
       bio: 'Lucy specializes in minimalist designs and loves experimenting with abstract styles.',
     },
     {
       name: 'Monde',
       role: 'Senior Artist',
-      image: '/tl-assets/Artists/Screenshot_20240927_043503.jpg',
+      image: '/assets/artists/Screenshot_20240927_043503.jpg',
       bio: 'Monde is an expert in intricate and full-sleeve tattoos with over 10 years of experience.',
     },
     {

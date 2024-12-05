@@ -55,7 +55,7 @@ export default function GallerySection() {
   return (
     <section 
       id="section3" 
-      className="min-h-screen flex flex-col justify-center items-center bg-[#2C302E] px-4 sm:px-6 lg:px-20 py-12"
+      className="min-h-screen flex flex-col justify-center items-center bg-[#2C302E] md:px-12 lg:px-20 py-12"
     >
       <h2 
         className={`
@@ -87,8 +87,8 @@ export default function GallerySection() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="lg:text-2xl sm:text-2xl font-heading font-extrabold text-[#daa520] mb-2 sm:mb-4 text-center">{item.title}</h3>
-            <p className="lg:text-m sm:text-lg font-body text-[#A3A8A3] text-center line-clamp-2">{item.description}</p>
+            <h3 className="lg:text-2xl text-2xl font-heading font-extrabold text-[#daa520] mb-2 sm:mb-4 text-center">{item.title}</h3>
+            <p className="lg:text-m text-lg font-body text-[#A3A8A3] text-center line-clamp-2">{item.description}</p>
           </div>
         ))}
       </div>
@@ -100,7 +100,7 @@ export default function GallerySection() {
           onClick={closeModal}
         >
           <div 
-            className="bg-[#151716] rounded-lg max-w-md sm:max-w-2xl w-full relative transform transition-all duration-300 scale-95 opacity-0 animate-scaleUp"
+            className="bg-[#151716] flex flex-col items-center justify-center rounded-lg max-w-md sm:max-w-2xl w-full relative transform transition-all duration-300 scale-95 opacity-0 animate-scaleUp"
             onClick={(e) => e.stopPropagation()}
           >
             <button 
@@ -114,11 +114,11 @@ export default function GallerySection() {
               alt={selectedItem.title} 
               width={600} 
               height={600} 
-              className="w-full h-48 sm:h-96 object-cover rounded-t-lg"
+              className="w-full h-full md:h-80 lg:h-64 object-cover rounded-t-lg"
             />
             <div className="p-4 sm:p-6">
-              <h3 className="text-xl sm:text-2xl font-semibold text-[#daa520] mb-2 sm:mb-4">{selectedItem.title}</h3>
-              <p className="text-sm sm:text-base text-[#A3A8A3]">{selectedItem.description}</p>
+              <h3 className="text-3xl font-heading font-extrabold text-[#daa520] mb-2 sm:mb-4 text-center">{selectedItem.title}</h3>
+              <p className="text-xl font-body text-[#A3A8A3] justify-center text-center">{selectedItem.description}</p>
             </div>
           </div>
         </div>
