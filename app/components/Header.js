@@ -16,7 +16,7 @@ export default function Header() {
       <nav className="flex justify-between items-center w-[92%] mx-auto">
         <div>
           <Image 
-            src="/tl assets/taglogoG.png" 
+            src="/assets/taglogoG.png" 
             alt="Logo" 
             width={130} 
             height={80} 
