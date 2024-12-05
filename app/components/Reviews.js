@@ -31,9 +31,9 @@ const reviews = [
 
 const ReviewSection = () => {
   return (
-    <section className="h-screen bg-[#2C302E] text-[#A3A8A3] py-16 px-8">
+    <section className="min-h-screen flex flex-col bg-[#2C302E] text-[#A3A8A3] py-16 px-8">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-white text-center mb-10">
+        <h2 className="text-4xl font-heading font-extrabold text-white text-center mb-10">
           What Our Customers Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -43,32 +43,30 @@ const ReviewSection = () => {
               className="p-6 bg-[#151716] rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex items-center mb-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-[#daa520] text-black rounded-full flex items-center justify-center font-bold">
+                <div className="flex-shrink-0 w-10 h-10 bg-[#daa520] text-black rounded-full flex items-center justify-center text-xl font-heading font-extrabold">
                   {review.name.charAt(0)}
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-white">{review.name}</h3>
-                  <p className="text-sm text-[#A3A8A3]">{review.date}</p>
+                  <h3 className="text-xl font-heading font-extrabold text-white">{review.name}</h3>
+                  <p className="text-sm font-body font-medium text-[#A3A8A3]">{review.date}</p>
                 </div>
               </div>
-              <p className="text-sm text-[#A3A8A3] mb-4">{review.review}</p>
-              <div className="flex items-center">
-                {[...Array(5)].map((_, index) => (
-                  <svg
-                    key={index}
-                    xmlns="http://www.w3.org/2000/svg"
-                    className={`w-6 h-6 ${
-                      index < Math.floor(review.rating) ? 'text-yellow-500' : 'text-gray-500'
-                    }`}
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M9.049 2.927a1 1 0 011.902 0l1.518 4.681a1 1 0 00.95.69h4.917a1 1 0 01.592 1.809l-3.988 2.887a1 1 0 00-.364 1.118l1.518 4.681a1 1 0 01-1.451 1.118L10 14.347l-3.987 2.887a1 1 0 01-1.451-1.118l1.518-4.681a1 1 0 00-.364-1.118l-3.988-2.887a1 1 0 01.592-1.809h4.917a1 1 0 00.95-.69l1.518-4.681z" />
-                  </svg>
-                ))}
+              <p className="text-m font-body font-medium text-[#A3A8A3] mb-4">{review.review}</p>
+              <div className="flex items-center text-yellow-400 text-3xl">
+              {Array(Math.floor(review.rating)).fill('★').join('')}
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex items-center justify-center text-center">
+          <a
+            href="https://www.google.com/maps/place/Tagline+Tattoo+Studio/@-25.5790883,27.1500462,17z/data=!4m8!3m7!1s0x1ebddfc41cd56469:0xec63feda8c403633!8m2!3d-25.5790883!4d27.1526211!9m1!1b1!16s%2Fg%2F11vyyd2jqh?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 text-3xl font-heading font-bold text-white bg-[#daa520] rounded-md hover:bg-[#c2931c] transition-colors duration-300 mt-10"
+          >
+            Leave a Review!
+          </a>
         </div>
       </div>
     </section>
