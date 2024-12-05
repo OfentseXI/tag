@@ -2,7 +2,7 @@
 
 export default function Footer() {
     return (
-        <div className="w-full bg-[#151716]">
+        <div className="w-full bg-[#151716] mt-10">
             <div className="container flex flex-col mx-auto">
                 <div className="flex flex-col items-center w-full my-10">
                     <div className="flex flex-col items-center gap-6 mb-8">

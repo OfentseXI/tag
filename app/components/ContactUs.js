@@ -61,7 +61,7 @@ const ContactCard = ({ title, description, actionText, actionLink, icon }) => (
 
 const ContactSection = () => (
     
-  <div className="h-screen container flex flex-col items-center justify-center gap-16 mx-auto">
+  <div className="min-h-screen container flex flex-col items-center justify-center gap-16 mx-auto">
     <h2
     className={`
     text-4xl sm:text-4xl lg:text-5xl font-bold my-10 
