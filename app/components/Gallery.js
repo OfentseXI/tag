@@ -59,7 +59,7 @@ export default function GallerySection() {
     >
       <h2 
         className={`
-            text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 
+            text-4xl md:text-5xl lg:text-5xl font-heading font-extrabold mb-10 
             text-white transition-transform duration-700 
             ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
         `}>
@@ -78,7 +78,7 @@ export default function GallerySection() {
             `}
             onClick={() => openModal(item)}
           >
-            <div className="w-full h-40 sm:h-48 lg:h-64 flex items-center justify-center overflow-hidden mb-4">
+            <div className="w-full h-40 md:h-80 lg:h-64 flex items-center justify-center overflow-hidden mb-4">
               <Image 
                 src={item.image} 
                 alt={item.title} 
@@ -87,8 +87,8 @@ export default function GallerySection() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-[#daa520] mb-2 sm:mb-4 text-center">{item.title}</h3>
-            <p className="text-xs sm:text-sm text-[#A3A8A3] text-center line-clamp-2">{item.description}</p>
+            <h3 className="lg:text-2xl sm:text-2xl font-heading font-extrabold text-[#daa520] mb-2 sm:mb-4 text-center">{item.title}</h3>
+            <p className="lg:text-m sm:text-lg font-body text-[#A3A8A3] text-center line-clamp-2">{item.description}</p>
           </div>
         ))}
       </div>
