@@ -78,7 +78,7 @@ export default function GallerySection() {
             `}
             onClick={() => openModal(item)}
           >
-            <div className="w-full h-40 md:h-80 lg:h-64 flex items-center justify-center overflow-hidden mb-4">
+            <div className="w-full h-80 md:h-80 lg:h-64 flex items-center justify-center overflow-hidden mb-4">
               <Image 
                 src={item.image} 
                 alt={item.title} 
