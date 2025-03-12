@@ -36,11 +36,11 @@ export default function Header() {
           <ul className="flex flex-col items-center py-4">
             {[
               { href: "#section1", text: "About Us" },
-              { href: "#section2", text: "What We Do" },
-              { href: "#section3", text: "SkinArt Gallery" },
-              { href: "#section4", text: "Artist Profiles" },
-              { href: "#section5", text: "Reviews" },
-              { href: "#section6", text: "Book Now!" }
+              { href: "#section2", text: "SkinArt Gallery" },
+              { href: "#section3", text: "Artist Profiles" },
+              { href: "#section4", text: "Reviews" },
+              { href: "#section5", text: "Book Now!" },
+              { href: "#section6", text: "Contact Us"}
             ].map((item, index) => (
               <li 
                 key={index} 

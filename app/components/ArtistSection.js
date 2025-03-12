@@ -22,7 +22,7 @@ export default function ArtistSection({ artists }) {
   }, []);
 
   return (
-    <section id="artist-section" className="min-h-screen bg-[#151716] flex items-center justify-center md:px-12 lg:px-20 py-12">
+    <section id="section3" className="min-h-screen bg-[#151716] flex items-center justify-center md:px-12 lg:px-20 py-12">
       <div className="w-[90%] mx-auto flex flex-col items-center gap-8">
         {/* Section Title */}
         <h2

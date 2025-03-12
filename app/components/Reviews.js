@@ -31,7 +31,7 @@ const reviews = [
 
 const ReviewSection = () => {
   return (
-    <section className="min-h-screen flex flex-col bg-[#2C302E] text-[#A3A8A3] py-16 px-8">
+    <section id="section4" className="min-h-screen flex flex-col bg-[#2C302E] text-[#A3A8A3] py-16 px-8">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl font-heading font-extrabold text-white text-center mb-10">
           What Our Customers Say

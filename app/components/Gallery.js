@@ -54,7 +54,7 @@ export default function GallerySection() {
 
   return (
     <section 
-      id="section3" 
+      id="section2" 
       className="min-h-screen flex flex-col justify-center items-center bg-[#2C302E] md:px-12 lg:px-20 py-12 mx-4"
     >
       <h2 

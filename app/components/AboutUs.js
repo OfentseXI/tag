@@ -21,7 +21,7 @@ export default function AboutUsSection() {
 
   return (
     <section
-      id="about-section"
+      id="section1"
       className="min-h-screen bg-[#151716] text-[#A3A8A3] flex flex-col justify-center items-center px-12 m:px-12 lg:px-20 py-12"
     >
       <div className="text-center max-w-5xl mx-auto">
