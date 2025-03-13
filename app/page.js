@@ -10,21 +10,21 @@ export default function Home() {
   
   const artists = [
     {
-      name: 'Lucy',
-      role: 'Junior Artist',
-      image: '/assets/artists/me.jpg',
-      bio: 'Lucy specializes in minimalist designs and loves experimenting with abstract styles.',
-    },
-    {
       name: 'Monde',
       role: 'Senior Artist',
-      image: '/assets/artists/Screenshot_20240927_043503.jpg',
+      image: '/assets/artists/monde.jpg',
       bio: 'Monde is an expert in intricate and full-sleeve tattoos with over 10 years of experience.',
     },
     {
-      name: 'Fancy Fentse',
+      name: 'Lucy',
+      role: 'Junior Artist',
+      image: '/assets/artists/lucy.jpg',
+      bio: 'Lucy specializes in minimalist designs and loves experimenting with abstract styles.',
+    },
+    {
+      name: 'Fancy',
       role: 'Apprentice',
-      image: '/tl-assets/Artists/Screenshot_20240927_043503.jpg',
+      image: '/assets/artists/fancy.jpg',
       bio: 'Young and Promising',
     },
   ];
