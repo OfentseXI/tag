@@ -30,9 +30,9 @@ const BookingSection = () => {
           height="64px"
           viewBox="0 0 64 64"
           xmlns="http://www.w3.org/2000/svg"
-          strokeWidth="3"
-          stroke="#000000"
-          fill="none"
+          strokeWidth="1"
+          stroke="#daa520"
+          fill="#daa520"
         >
           <path
             d="M15.68,52.5,8.27,41.35a1.21,1.21,0,0,1,.34-1.67l4.68-3a1.2,1.2,0,0,1,1.64.32l7.56,11a1.21,1.21,0,0,1-.32,1.68l-4.82,3.23A1.2,1.2,0,0,1,15.68,52.5Z"
@@ -60,7 +60,7 @@ const BookingSection = () => {
           height="64px"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
-          fill="#000000"
+          fill="#daa520"
         >
           <path
             d="M227.168,273.419l.524-.524q.4-.4.087-.708t-.713.1l-.514.514a3.37,3.37,0,0,0-2.156-.915,2.941,2.941,0,0,0-2.675,2.156,2.6,2.6,0,0,0,.08,1.337,8.391,8.391,0,0,0,.687,1.486l-2.256,2.255a1.844,1.844,0,0,1-.254-.788,1.652,1.652,0,0,1,.092-.679,8.652,8.652,0,0,1,.381-.836.745.745,0,0,0,.077-.495.906.906,0,0,0-.267-.471.854.854,0,0,0-.64-.266.828.828,0,0,0-.6.237,2.367,2.367,0,0,0-.507.779,2.985,2.985,0,0,0-.211,1.05,3.323,3.323,0,0,0,.2,1.215,4.338,4.338,0,0,0,.725,1.258l-1.309,1.31a.746.746,0,0,1-.6.212.932.932,0,0,1-.64-.327,4.208,4.208,0,0,1-.571-.94,6.243,6.243,0,0,1-.417-1.467,7.1,7.1,0,0,1,.412-3.17,6.758,6.758,0,0,1,2.437-2.859,6.873,6.873,0,0,1,3.635-1.126q.482,0,.938.048t.7.122Z"
@@ -72,7 +72,7 @@ const BookingSection = () => {
     {
       icon: (
         <svg
-          fill="#000000"
+          fill="#daa520"
           height="64px"
           width="64px"
           xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ const BookingSection = () => {
     {
       icon: (
         <svg
-          fill="#000000"
+          fill="#daa520"
           height="64px"
           width="64px"
           xmlns="http://www.w3.org/2000/svg"
@@ -105,10 +105,10 @@ const BookingSection = () => {
       className="min-h-screen bg-[#151716] text-[#A3A8A3] flex flex-col justify-center items-center px-6 sm:px-12 lg:px-20 py-12"
     >
       <div className="text-center max-w-5xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6">
           Booking Process
         </h2>
-        <p className="text-lg sm:text-xl mb-10">
+        <p className="font-body text-lg sm:text-xl mb-10">
           Bookings are strictly by WhatsApp/call appointment only.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8">
@@ -118,7 +118,7 @@ const BookingSection = () => {
               className="flex flex-col items-center text-center bg-[#2C302E] p-6 rounded-lg transition-transform duration-500 hover:scale-105"
             >
               <div className="text-[#DB8C28] mb-4">{step.icon}</div>
-              <h3 className="text-lg font-semibold text-white">{step.title}</h3>
+              <h3 className="text-lg font-body font-semibold text-white">{step.title}</h3>
             </div>
           ))}
         </div>
