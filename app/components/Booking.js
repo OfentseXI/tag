@@ -118,7 +118,8 @@ const BookingSection = () => {
               className="flex flex-col items-center text-center bg-[#2C302E] p-6 rounded-lg transition-transform duration-500 hover:scale-105"
             >
               <div className="text-[#DB8C28] mb-4">{step.icon}</div>
-              <h3 className="text-lg font-body font-semibold text-white">{step.title}</h3>
+              <h3 className="text-lg font-bodylucy
+               font-semibold text-white">{step.title}</h3>
             </div>
           ))}
         </div>
