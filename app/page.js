@@ -13,19 +13,19 @@ export default function Home() {
       name: 'Monde',
       role: 'Senior Artist',
       image: '/assets/artists/monde.jpg',
-      bio: 'Monde is an expert in intricate and full-sleeve tattoos with over 10 years of experience.',
+      bio: 'Our senior artist with over 5 years of experience, known for bold, intricate sleeves and large-scale masterpieces. Precision meets artistry in every piece.',
     },
     {
       name: 'Lucy',
       role: 'Junior Artist',
       image: '/assets/artists/lucy.jpg',
-      bio: 'Lucy specializes in minimalist designs and loves experimenting with abstract styles.',
+      bio: 'A junior artist with a passion for detail, specializing in complex miniatures and custom designs. If it involves skulls, he’s all in.',
     },
     {
       name: 'Fancy',
       role: 'Apprentice',
       image: '/assets/artists/fancy.jpg',
-      bio: 'Young and Promising',
+      bio: 'A rising talent and dedicated apprentice, bringing fresh creativity to small designs with flair and style.',
     },
   ];
 
