@@ -6,7 +6,7 @@ export default function ArtistPage({ params }) {
     {
       name: "Monde",
       role: "Senior Artist",
-      bio: "With over 5 years of experience, Monde is a master of sleeves and large-scale pieces. His work combines boldness and precision to create stunning body art.",
+      bio: "With over 4 years of experience, Monde is a master of sleeves and large-scale pieces. His work combines boldness and precision to create stunning body art.",
       image: "/assets/artists/monde2.jpg",
       funFact: "Monde ....",
       socialMedia: {

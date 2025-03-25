@@ -13,7 +13,7 @@ export default function Home() {
       name: 'Monde',
       role: 'Senior Artist',
       image: '/assets/artists/monde.jpg',
-      bio: 'Our senior artist with over 5 years of experience, known for bold, intricate sleeves and large-scale masterpieces. Precision meets artistry in every piece.',
+      bio: 'Our senior artist with over 4 years of experience, known for bold, intricate sleeves and large-scale masterpieces. Precision meets artistry in every piece.',
     },
     {
       name: 'Lucy',
