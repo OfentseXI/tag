@@ -32,7 +32,7 @@ export default function ArtistSection({ artists }) {
             ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
           `}
         >
-          Our Talented Artists
+          Our Talented Team
         </h2>
         <p 
           className={`
@@ -41,13 +41,13 @@ export default function ArtistSection({ artists }) {
             ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
           `}
         >
-            Our team of professional tattoo artists brings your ideas to life with precision, creativity, and passion.
+            Our talented team of professionals bring your ideas to life with precision, creativity, and passion.
             With years of experience and unique styles, we ensure every design is a masterpiece. Whether you&apos;re looking
-            for a minimalist design or a full-sleeve artwork, you&apos;re in expert hands at Tagline Tattoo Studio.
+            for a minimalist design, a full-sleeve artwork or a fresh cut, you&apos;re in expert hands at Tagline Tattoo Studio.
         </p>
 
         {/* Artists Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:mx-15">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:mx-15 items-center">
           {artists.map((artist) => (
             <div
               key={artist.name}

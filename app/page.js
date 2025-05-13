@@ -30,15 +30,15 @@ export default function Home() {
     {
       name: "John D",
       role: "Management",
-      image: "/assets/artists/fancy.jpg",
-      bio: "A rising talent and dedicated apprentice, bringing fresh creativity to small designs with flair and style.",
+      image: "/assets/artists/JohnD.jpg",
+      bio: "The mind behind the message. As our marketing maestro, John brings bold, vibrant ideas and sharp strategy to every move Tagline makes.",
     },
     {
-      name: "Fancy",
-      role: "Apprentice",
-      image: "/assets/artists/fancy.jpg",
-      bio: "A rising talent and dedicated apprentice, bringing fresh creativity to small designs with flair and style.",
-    }
+      name: "Nico de Barber",
+      role: "Barber",
+      image: "/assets/artists/Nico.jpg",
+      bio: "No shortcuts, just finesse. Nico's cuts are clean, sharp, and always speak louder than words. What you see is exactly what you get, and what you get is the best.",
+    },
   ];
 
   return (

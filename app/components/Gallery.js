@@ -10,10 +10,11 @@ const galleryItems = [
       "/gallery/smalls/image2.jpg",
       "/gallery/smalls/image3.jpg",
       "/gallery/smalls/image4.jpg",
-      "/gallery/smalls/image5.jpg"
+      "/gallery/smalls/image5.jpg",
     ],
     title: "Small and Mini Tattoos",
-    description: "Intricate and delicate designs that make a subtle yet powerful statement.",
+    description:
+      "Intricate and delicate designs that make a subtle yet powerful statement.",
   },
   {
     images: [
@@ -26,20 +27,38 @@ const galleryItems = [
       "/gallery/randoms/image7.jpg",
       "/gallery/randoms/image8.jpg",
       "/gallery/randoms/image9.jpg",
-      "/gallery/randoms/image10.jpg"
+      "/gallery/randoms/image10.jpg",
     ],
     title: "Medium to Large Tattoos",
-    description: "Unique and spontaneous designs that capture individual creativity.",
+    description:
+      "Unique and spontaneous designs that capture individual creativity.",
   },
   {
     images: [
       "/gallery/sleeves/image1.jpg",
       "/gallery/sleeves/image2.jpg",
       "/gallery/sleeves/image3.jpg",
-      "/gallery/sleeves/image4.jpg"
+      "/gallery/sleeves/image4.jpg",
     ],
     title: "Sleeves",
-    description: "Comprehensive and detailed full/half-arm artworks that tell a complete story.",
+    description:
+      "Comprehensive and detailed full/half-arm artworks that tell a complete story.",
+  },
+  {
+    images: [
+      "/gallery/cuts/1.jpg",
+      "/gallery/cuts/2.jpg",
+      "/gallery/cuts/3.jpg",
+      "/gallery/cuts/4.jpg",
+      "/gallery/cuts/5.jpg",
+      "/gallery/cuts/6.jpg",
+      "/gallery/cuts/7.jpg",
+      "/gallery/cuts/8.jpg",
+      "/gallery/cuts/9.jpg",
+    ],
+    title: "Cuts",
+    description:
+      "Nico's finest and freshest cuts.",
   },
 ];
 

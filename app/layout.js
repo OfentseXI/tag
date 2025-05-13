@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Tagline Tattoo Studio",
-  description: "Welcome to the home of the best tattoo experience",
+  description: "Welcome to the home of the best cosmetic experience",
 };
 
 export default function RootLayout({ children }) {
